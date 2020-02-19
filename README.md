@@ -1,10 +1,16 @@
 Create long lasting memories of each burger youve eaten and become a little bit like ron swanson with this miracle of an app. 
 
 --to run a local copy--
+
 npm i
+
 run schema.sql
+
 node server.js
+
 nav to localhost:3001
+
+
 
 A get req to home shows you the user interface and populates the list of burgers. 
 
