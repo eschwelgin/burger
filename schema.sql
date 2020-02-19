@@ -9,4 +9,6 @@ create table burgers (
 );
 
 INSERT INTO burgers(burger_name, devoured)
-VALUES('Double Cheeseburger', false), ('Bacon Burger', false), ('Loaded Topping Burger', false)
+VALUES('Double Cheeseburger', false), 
+        ('Bacon Burger', false), 
+        ('Loaded Topping Burger', false)
