@@ -33,7 +33,6 @@ const orm = {
         connection.query(sqlInsert, [bName, false],function (err, results) { 
             if (err) {console.log(err)
             }
-            
         })
     }, 
     update: function (id) {

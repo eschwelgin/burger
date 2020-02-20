@@ -1,8 +1,9 @@
 
 const express = require('express')
-const app = express()
 const exphbs = require('express-handlebars')
 const orm = require('./orm/orm.js')
+
+const app = express()
 const PORT = process.env.PORT || 3001
 
 app.use(express.urlencoded({ extended: true }))
@@ -15,11 +16,11 @@ app.set('view engine', 'handlebars')
 
 app.get('/', async function (req, res) {
     const result = await orm.select()
-    res.json(result)
+    // res.json(result)
+    console.log(result)
+    res.render('home', {result})
 })
 
-
-//route / submit button post req INSERT
 app.post('/', async function (req, res) {
     orm.insert(req.body.val) 
     const result = await orm.select()
@@ -27,16 +28,12 @@ app.post('/', async function (req, res) {
     //curl --data "val=testBurger" http://localhost:3001
 })
 
-
-
-//route / devour button put req UPDATE
 app.put('/', async function (req, res) {
     orm.update(req.body.val) 
     const result = await orm.select()
     res.json(result)
     //curl -X PUT -d val=1 localhost:3001
 })
-
 
 app.listen(PORT, function() {
     console.log('Server listening on ' + PORT)
