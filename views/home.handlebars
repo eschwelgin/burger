@@ -1,5 +1,30 @@
-// loop thru data 
+<h1> BURGER TIME! </h1>
 
-// insert buttons and fields 
+<h2> Burgers to be devoured </h2>
+<ul id="devour">
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burgers }}
+    {{/unless}}
+  {{/each}}
+</ul>
 
+
+<h2> Burgers that have been devoured </h2>
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/devoured }}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form>
+  <div>
+    <label>Burger Name:</label>
+    <input id="bName">
+    <button id="add">Add Burger</button>
+  </div>
+</form>
 
