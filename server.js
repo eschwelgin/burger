@@ -18,7 +18,7 @@ app.get('/', async function (req, res) {
     const result = await orm.select()
     // res.json(result)
     console.log(result)
-    res.render('home', {result})
+    res.render('home', result)
 })
 
 app.post('/', async function (req, res) {
