@@ -15,7 +15,7 @@ You can then devour a burger by pressing the button. This sends an update reques
 
 All options respond with the complete database after changes. Your burger list is always current (and who doesn't want a current burger list) 
 
-Just as a side note, this project should have been about tacos. Come on, its 2020, we're eating tacos now..
+Just as a side note, this project should have been about tacos. Come on, its 2020, we're eating tacos now
 
 
 
