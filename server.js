@@ -28,8 +28,7 @@ app.post('/', async function (req, res) {
 
 app.put('/', async function (req, res) {
     orm.update(req.body.id) 
-    const result = await orm.select()
-    res.json(result)
+    res.status(200).end()
     //curl -X PUT -d val=1 localhost:3001
 })
 

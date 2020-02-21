@@ -1,3 +1,4 @@
+drop database if exists burger_db;
 create database burger_db; 
 use burger_db; 
 
@@ -12,4 +13,6 @@ INSERT INTO burgers(burger_name, devoured)
 VALUES('Double Cheeseburger', false), 
         ('Bacon Burger', false), 
         ('Loaded Topping Burger', false)
-        
+;
+
+SELECT * FROM burgers;
