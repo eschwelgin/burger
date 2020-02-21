@@ -3,6 +3,7 @@ Create long lasting memories of each burger youve eaten and become a little bit 
 --to run a local copy--
 npm i;
 run schema.sql;
+update username/pass in orm/orm.js;
 node server.js;
 nav to localhost:3001;
 
