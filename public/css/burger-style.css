@@ -1,0 +1,42 @@
+body {
+    background-image: url("/assets/burger-background.jpg");
+    background-size: cover;
+}
+
+.heading {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+.box1 {
+    position: fixed;
+    top: 15%;
+    left: 17%;
+}
+
+.box2 {
+    position: fixed;
+    top: 15%;
+    right: 10%;
+}
+
+.add {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.heading, 
+.box1, 
+.box2,
+.add {
+    background-color: rgba(211,211,211,.6);
+    padding: 5px 20px 15px 20px;
+    border-radius: 4px;
+}
