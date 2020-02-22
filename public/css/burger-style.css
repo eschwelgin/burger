@@ -1,11 +1,12 @@
 body {
     background-image: url("/assets/burger-background.jpg");
     background-size: cover;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .heading {
     position: fixed;
-    top: 3%;
+    top: 10px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
